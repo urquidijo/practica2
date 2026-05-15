@@ -164,3 +164,28 @@ footer {
         font-size: 14px;
     }
 }
+
+.contenedor-cv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta-cv {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.06);
+}
+
+.tarjeta-cv h3 {
+    color: #1e3a8a;
+}
+
+@media (max-width: 900px) {
+    .contenedor-cv {
+        grid-template-columns: 1fr;
+    }
+}
